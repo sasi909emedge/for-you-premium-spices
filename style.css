@@ -1,0 +1,1427 @@
+/* ==========================================
+   FOR YOU PREMIUM SPICES
+   STYLE.CSS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8E7;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ==========================================
+   PREMIUM NAVBAR
+========================================== */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 15px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(30, 20, 10, .45);
+
+    backdrop-filter: blur(15px);
+
+    transition: .4s;
+
+    z-index: 9999;
+
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.logo img {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    margin-right: 15px;
+
+}
+
+.brand h2 {
+
+    color: white;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+}
+
+.brand span {
+
+    color: #F4B400;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    position: relative;
+
+    transition: .3s;
+
+}
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #F4B400;
+
+    transition: .3s;
+
+}
+
+.nav-links a:hover::after {
+
+    width: 100%;
+
+}
+
+.nav-links a:hover {
+
+    color: #F4B400;
+
+}
+
+.call-btn {
+
+    padding: 12px 28px;
+
+    border-radius: 40px;
+
+    background: #D32F2F;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.call-btn:hover {
+
+    background: #F4B400;
+
+    color: black;
+
+    transform: translateY(-3px);
+
+}
+
+/* ==========================================
+   PREMIUM HERO SECTION
+========================================== */
+
+.hero {
+
+    position: relative;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background: url("images/hero.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    animation: zoomHero 20s infinite alternate;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, .55);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    color: white;
+
+    animation: fadeUp 1.5s;
+
+}
+
+.hero-logo {
+
+    width: 170px;
+
+    margin: auto;
+
+    margin-bottom: 25px;
+
+}
+
+.hero h1 {
+
+    font-size: 90px;
+
+    color: #ffffff;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+
+}
+
+.hero h2 {
+
+    margin-top: 10px;
+
+    color: #F4B400;
+
+    font-size: 36px;
+
+    letter-spacing: 4px;
+
+}
+
+.hero h3 {
+
+    margin-top: 25px;
+
+    font-size: 30px;
+
+    color: #ffffff;
+
+}
+
+.hero p {
+
+    margin-top: 25px;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+}
+
+.hero-buttons {
+
+    margin-top: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+.btn {
+
+    padding: 16px 42px;
+
+    border-radius: 50px;
+
+    background: #D32F2F;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .4s;
+
+}
+
+.btn:hover {
+
+    background: #F4B400;
+
+    color: black;
+
+    transform: translateY(-6px);
+
+}
+
+.btn-outline {
+
+    background: transparent;
+
+    border: 2px solid white;
+
+}
+
+.btn-outline:hover {
+
+    background: white;
+
+    color: #D32F2F;
+
+}
+
+.scroll-down {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+}
+
+.scroll-down span {
+
+    display: block;
+
+    width: 28px;
+
+    height: 48px;
+
+    border: 2px solid white;
+
+    border-radius: 20px;
+
+    position: relative;
+
+}
+
+.scroll-down span::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 8px;
+
+    width: 6px;
+
+    height: 6px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    transform: translateX(-50%);
+
+    animation: scroll 2s infinite;
+
+}
+
+@keyframes scroll {
+
+    0% {
+
+        opacity: 1;
+
+        top: 8px;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        top: 28px;
+
+    }
+
+}
+
+@keyframes zoomHero {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.08);
+
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    background: #D32F2F;
+
+    color: white;
+
+    padding: 15px 45px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .4s;
+
+}
+
+.btn:hover {
+
+    background: #F4B400;
+
+    color: black;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+section {
+
+    padding: 90px 8%;
+
+}
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 50px;
+
+    color: #3E2723;
+
+    position: relative;
+
+}
+
+section h2::after {
+
+    content: "";
+
+    width: 90px;
+
+    height: 5px;
+
+    background: #D32F2F;
+
+    display: block;
+
+    margin: 15px auto;
+
+    border-radius: 20px;
+
+}
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about {
+
+    background: #ffffff;
+
+}
+
+.about p {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    line-height: 1.9;
+
+    color: #555;
+
+}
+
+
+
+/* ==========================================
+   PRODUCTS
+========================================== */
+
+.products {
+
+    background: #FFF8E7;
+
+}
+
+.product-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 40px;
+
+}
+
+.product-card {
+
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+
+    transition: .4s;
+
+}
+
+.product-card:hover {
+
+    transform: translateY(-12px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+
+}
+
+.product-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+}
+
+.product-card h3 {
+
+    font-size: 30px;
+
+    color: #D32F2F;
+
+    margin: 25px;
+
+}
+
+.product-card p {
+
+    margin: 0 25px 30px;
+
+    font-size: 18px;
+
+    color: #555;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* ==========================================
+   PRODUCT IMAGE ZOOM
+========================================== */
+
+.product-card {
+
+    cursor: pointer;
+
+}
+
+.product-card img {
+
+    transition: .5s;
+
+}
+
+.product-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+
+/* ==========================================
+   PRODUCT BORDER
+========================================== */
+
+.product-card::before {
+
+    content: "";
+
+    display: block;
+
+    height: 8px;
+
+    background: linear-gradient(to right, #F4B400, #D32F2F);
+
+}
+
+
+
+/* ==========================================
+   PRODUCT BUTTON (Future Use)
+========================================== */
+
+.product-btn {
+
+    display: inline-block;
+
+    margin: 0 25px 30px;
+
+    padding: 12px 28px;
+
+    background: #D32F2F;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 40px;
+
+    transition: .3s;
+
+}
+
+.product-btn:hover {
+
+    background: #F4B400;
+
+    color: black;
+
+}
+
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.features {
+
+    background: #ffffff;
+
+}
+
+.feature-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+
+    text-align: center;
+
+}
+
+.feature {
+
+    background: #FFF8E7;
+
+    padding: 40px 25px;
+
+    border-radius: 20px;
+
+    transition: .4s;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+.feature:hover {
+
+    transform: translateY(-10px);
+
+    background: #D32F2F;
+
+    color: white;
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .20);
+
+}
+
+.feature i {
+
+    font-size: 55px;
+
+    color: #F4B400;
+
+    margin-bottom: 20px;
+
+}
+
+.feature:hover i {
+
+    color: white;
+
+}
+
+.feature h3 {
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* ==========================================
+   GALLERY
+========================================== */
+
+.gallery {
+
+    background: #FFF8E7;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+}
+
+.gallery-grid img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    transition: .4s;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+
+}
+
+.gallery-grid img:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+
+}
+
+
+
+/* ==========================================
+   IMAGE BORDER EFFECT
+========================================== */
+
+.gallery-grid img {
+
+    border: 5px solid white;
+
+}
+
+
+
+/* ==========================================
+   SECTION SPACING
+========================================== */
+
+.features,
+.gallery {
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+
+}
+
+
+
+/* ==========================================
+   NICE BACKGROUND GRADIENT
+========================================== */
+
+.products,
+.gallery {
+
+    background: linear-gradient(to bottom,
+            #FFFDF8,
+            #FFF8E7);
+
+}
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact {
+
+    background: #ffffff;
+
+}
+
+.contact-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: #FFF8E7;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+
+}
+
+.contact-box h3 {
+
+    color: #D32F2F;
+
+    margin-top: 25px;
+
+    font-size: 28px;
+
+}
+
+.contact-box p {
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #444;
+
+    line-height: 1.8;
+
+}
+
+.contact-box i {
+
+    color: #F4B400;
+
+    margin-right: 12px;
+
+    font-size: 22px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+
+    background: #3E2723;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+}
+
+footer h2 {
+
+    color: #F4B400;
+
+    margin-bottom: 10px;
+
+    font-size: 32px;
+
+}
+
+footer p {
+
+    font-size: 17px;
+
+    margin: 8px 0;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #D32F2F;
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #b71c1c;
+
+}
+
+/* ==========================================
+   IMAGE RESPONSIVE
+========================================== */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media(max-width:992px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        padding: 15px;
+
+    }
+
+    .logo img {
+
+        height: 55px;
+
+        margin-bottom: 15px;
+
+    }
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .nav-links li {
+
+        margin: 10px 15px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 60px;
+
+    }
+
+    .hero h2 {
+
+        font-size: 30px;
+
+    }
+
+    .hero h3 {
+
+        font-size: 24px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+    .product-card img {
+
+        height: 240px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    section {
+
+        padding: 70px 25px;
+
+    }
+
+    .hero {
+
+        background-attachment: scroll;
+
+    }
+
+    .hero h1 {
+
+        font-size: 46px;
+
+    }
+
+    .hero h2 {
+
+        font-size: 24px;
+
+    }
+
+    .hero h3 {
+
+        font-size: 20px;
+
+    }
+
+    .hero p {
+
+        font-size: 17px;
+
+    }
+
+    .btn {
+
+        padding: 14px 35px;
+
+    }
+
+    .contact-box {
+
+        padding: 30px;
+
+    }
+
+    .contact-box h3 {
+
+        font-size: 24px;
+
+    }
+
+    .contact-box p {
+
+        font-size: 17px;
+
+    }
+
+    footer h2 {
+
+        font-size: 26px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+    .hero h2 {
+
+        font-size: 20px;
+
+    }
+
+    .hero h3 {
+
+        font-size: 18px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+    .nav-links {
+
+        gap: 8px;
+
+    }
+
+    .nav-links a {
+
+        font-size: 15px;
+
+    }
+
+    section h2 {
+
+        font-size: 34px;
+
+    }
+
+    .product-card h3 {
+
+        font-size: 24px;
+
+    }
+
+    .feature h3 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+/* ===============================
+SCROLL ANIMATION
+=============================== */
+
+.about,
+.product-card,
+.feature,
+.contact-box {
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s;
+
+}
+
+.show {
+
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+
+}
+
+.gallery img {
+
+    opacity: 1 !important;
+    transform: none !important;
+
+}
+
+/* ===============================
+TOP BUTTON
+=============================== */
+
+#topBtn {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #D32F2F;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+
+    transition: .3s;
+
+    z-index: 9999;
+
+}
+
+#topBtn:hover {
+
+    background: #F4B400;
+
+    color: black;
+
+}
+
+/* ===============================
+IMAGE POPUP
+=============================== */
+
+.popup {
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, .9);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+}
+
+.popup img {
+
+    max-width: 85%;
+
+    max-height: 85%;
+
+    border-radius: 15px;
+
+}
+
+.close {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 35px;
+
+    color: white;
+
+    font-size: 45px;
+
+    cursor: pointer;
+
+}
+
+/* ===============================
+WHATSAPP BUTTON
+=============================== */
+
+.whatsapp {
+
+    position: fixed;
+
+    bottom: 100px;
+
+    right: 30px;
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #25D366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 34px;
+
+    text-decoration: none;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
+
+    z-index: 9999;
+
+    transition: .3s;
+
+}
+
+.whatsapp:hover {
+
+    transform: scale(1.1);
+
+}
+
+.language-switch {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+.language-switch button {
+
+    padding: 8px 18px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    background: #F4B400;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.language-switch button:hover {
+
+    background: #D32F2F;
+
+    color: white;
+
+}
