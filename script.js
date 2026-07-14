@@ -166,33 +166,21 @@ window.addEventListener("load", () => {
 
 
 
+// ======================================
 // Floating WhatsApp Button
+// ======================================
 
-const whatsapp = document.createElement("div");
+const whatsapp = document.createElement("a");
+
+whatsapp.href = "https://wa.me/918977970909?text=Hello%20FOR%20YOU%20Premium%20Spices,%20I%20would%20like%20to%20know%20more%20about%20your%20products.";
+
+whatsapp.target = "_blank";
 
 whatsapp.className = "whatsapp";
 
 whatsapp.innerHTML = '<i class="fab fa-whatsapp"></i>';
 
 document.body.appendChild(whatsapp);
-
-whatsapp.onclick = function () {
-
-    const choice = confirm("Click OK for HARAGOPAL\nClick Cancel for SASIDHAR");
-
-    if (choice) {
-
-        window.open("https://wa.me/919848890531?text=Hello FOR YOU Premium Spices, I would like to know more about your products.", "_blank");
-
-    }
-
-    else {
-
-        window.open("https://wa.me/918977970909?text=Hello FOR YOU Premium Spices, I would like to know more about your products.", "_blank");
-
-    }
-
-};
 const english = {
 
     home: "Home",
